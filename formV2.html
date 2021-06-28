@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form v2</title>
+  </head>
+  <body>
+    <form id="formContact" onsubmit="validForm()" name="formContact">
+      <fieldset>
+        <legend class="legend">Contact</legend>
+        <div>
+          <label for="name" class="legend">Nom</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+
+        <div>
+          <label for="firstname" class="legend">Prénom</label>
+          <input type="text" name="firstname" id="firstname" required />
+        </div>
+
+        <div>
+          <label for="age" class="legend">Âge</label>
+          <input type="number" name="age" id="age" required />
+        </div>
+
+        <div>
+          <label for="email" class="legend">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+
+        <div>
+          <label for="phone" class="legend">Téléphone</label>
+          <input type="tel" name="phone" id="phone" required />
+        </div>
+        <hr />
+        <div>
+          <label for="listcanal" class="legend">Canal de contact préféré</label>
+          <select id="listcanal" size="1" required>
+            <option value="1">Email</option>
+            <option value="2">Téléphone</option>
+          </select>
+        </div>
+        <hr />
+        <div>
+          <label for="message" class="legend">Message</label>
+          <textarea rows="4" cols="25" id="message" maxlength="50"></textarea>
+        </div>
+        <hr />
+        <div>
+          <button type="submit">Envoyer...</button>
+        </div>
+        <div id="errors"></div>
+      </fieldset>
+    </form>
+    <script type="text/javascript" src="/js/form2.js"></script>
+  </body>
+</html>
