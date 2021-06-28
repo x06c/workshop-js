@@ -11,7 +11,7 @@ function validForm(event) {
   //let regexEmail = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
 
   let phone = document.getElementById("phone");
-  let regexPhone = /^(?:(?:\+|00)33|0)\s*[1-9](from 1 to 9)(?:[\s.-]*\d{2}){4}$/;
+  let regexPhone = /^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$/;
 
   let list = document.getElementById("listcanal");
   let msg = document.getElementById("message");
